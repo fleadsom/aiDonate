@@ -1,156 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SXT-73-MOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S2O-b0-v8u">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Charities-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Navigation Controller-->
+        <scene sceneID="KtC-Nk-m0Q">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                <navigationController id="bki-Hg-yfS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W9f-su-TjU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S2O-b0-v8u" kind="relationship" relationship="rootViewController" id="NS9-cN-e4c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUl-6H-xxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2442" y="-2113"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Nu6-Pq-dO0">
+            <objects>
+                <viewController id="S2O-b0-v8u" customClass="LoginViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V41-Ks-ZUD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5" userLabel="Charities View">
-                                <rect key="frame" x="86.5" y="312" width="202" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deutsche Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8pV-8a-dOb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85785587005979247" green="0.91722074998154279" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Warwick logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-vQ-F7m">
+                                <rect key="frame" x="135" y="449" width="240" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85969763994216919" green="0.9204288125038147" blue="0.99216741323471069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DBDonates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSX-5k-Wpg">
+                                <rect key="frame" x="29" y="233" width="211" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.31754912467029844" green="0.52282931214289996" blue="0.99216741323471069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.33960437928863929" green="0.56315806092462972" blue="0.99216741323471069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by CharitiesViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="75.5" y="363" width="223" height="153"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="153" id="Zgc-4M-Jfa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vb5-Hf-Sde">
-                                <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UmX-0H-KY8">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Charity" id="vS8-Qt-XCA">
-                                        <rect key="frame" x="9.5" y="0.0" width="355" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-V3-PgT">
-                                                    <rect key="frame" x="1" y="-1" width="128" height="152"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="128" id="aDP-yK-xJD"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXs-Vm-8O2">
-                                                    <rect key="frame" x="134" y="20" width="217" height="30"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-tn-nul">
-                                                    <rect key="frame" x="141" y="60" width="203" height="30"/>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-Ya-8aX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
-                                                </button>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="a6F-V3-PgT" firstAttribute="top" secondItem="vS8-Qt-XCA" secondAttribute="topMargin" constant="-9" id="3eX-jS-yAc"/>
-                                            <constraint firstItem="BXs-Vm-8O2" firstAttribute="leading" secondItem="a6F-V3-PgT" secondAttribute="trailing" constant="5" id="5JP-h2-XS4"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="BXs-Vm-8O2" secondAttribute="trailing" constant="-4" id="6b0-ZN-WMU"/>
-                                            <constraint firstItem="lZA-Ya-8aX" firstAttribute="leading" secondItem="vS8-Qt-XCA" secondAttribute="leading" id="J7j-D1-HPM"/>
-                                            <constraint firstItem="a6F-V3-PgT" firstAttribute="centerY" secondItem="Fim-tn-nul" secondAttribute="centerY" id="JOb-1d-At7"/>
-                                            <constraint firstAttribute="bottom" secondItem="lZA-Ya-8aX" secondAttribute="bottom" id="OIh-a0-dwe"/>
-                                            <constraint firstItem="Fim-tn-nul" firstAttribute="leading" secondItem="a6F-V3-PgT" secondAttribute="trailing" constant="12" id="XSz-yk-fMl"/>
-                                            <constraint firstItem="lZA-Ya-8aX" firstAttribute="top" secondItem="vS8-Qt-XCA" secondAttribute="top" id="ZpY-tH-Mxz"/>
-                                            <constraint firstAttribute="trailing" secondItem="lZA-Ya-8aX" secondAttribute="trailing" id="eFN-D3-WrD"/>
-                                            <constraint firstItem="Fim-tn-nul" firstAttribute="top" secondItem="BXs-Vm-8O2" secondAttribute="bottom" constant="10" id="hg3-vM-YRg"/>
-                                            <constraint firstItem="BXs-Vm-8O2" firstAttribute="centerX" secondItem="Fim-tn-nul" secondAttribute="centerX" id="moG-Y0-8es"/>
-                                            <constraint firstItem="a6F-V3-PgT" firstAttribute="leading" secondItem="vS8-Qt-XCA" secondAttribute="leadingMargin" constant="-7" id="n89-0E-gFr"/>
-                                            <constraint firstItem="lZA-Ya-8aX" firstAttribute="centerY" secondItem="a6F-V3-PgT" secondAttribute="centerY" id="rpb-lt-8pG"/>
-                                        </constraints>
-                                        <viewLayoutGuide key="safeArea" id="Trm-Kf-JNG"/>
-                                        <size key="customSize" width="355" height="150"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="vb5-Hf-Sde" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="CSm-HL-ily"/>
-                            <constraint firstItem="vb5-Hf-Sde" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="LAM-Jd-ZY6"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="vb5-Hf-Sde" secondAttribute="centerX" id="UeQ-SB-h3a"/>
-                            <constraint firstItem="vb5-Hf-Sde" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="X0Y-7r-BhG"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="kQ3-bO-X6P"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="s3X-NG-o8O"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6xT-c9-EeZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Charities" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
-            <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
+                    <navigationItem key="navigationItem" id="K0J-mW-EDI"/>
                     <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <outlet property="loginView" destination="V41-Ks-ZUD" id="xt8-2o-bP1"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEk-jf-RZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-1313" y="-1973"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="aw1-tN-VoB">
+        <!--Donate!-->
+        <scene sceneID="yuk-5k-OZG">
             <objects>
-                <viewController id="SXT-73-MOZ" customClass="LoginViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e3f-jC-PTV">
+                <viewController id="mLX-Re-LLb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TH7-4i-wRR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="TOM-qY-Myx"/>
+                        <viewLayoutGuide key="safeArea" id="W2q-YU-Url"/>
                     </view>
-                    <connections>
-                        <outlet property="loginView" destination="e3f-jC-PTV" id="7CP-7S-hVa"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Donate!" id="EPf-6J-j9w"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m0N-W9-Q9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euJ-Sc-rBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="505" y="-388"/>
+            <point key="canvasLocation" x="-422" y="-331"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="BQ5-7A-5v5">
+            <objects>
+                <viewController id="qsD-yt-sV6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WGx-8O-4yH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZcL-9Z-FgJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friends" id="jbL-k4-Ggn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0p5-33-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-1797"/>
+        </scene>
+        <!--Charity Browser-->
+        <scene sceneID="KxE-GJ-f3E">
+            <objects>
+                <viewController id="flH-fB-1Xg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OwZ-GQ-nks">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e5p-GX-xA7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charity Browser" id="DSf-bj-zDa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XdZ-R3-FVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-1120"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yfR-dy-2lP">
+            <objects>
+                <tabBarController id="6Nd-gv-QSX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eif-PA-tnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="flH-fB-1Xg" kind="relationship" relationship="viewControllers" id="oux-yU-lL5"/>
+                        <segue destination="mLX-Re-LLb" kind="relationship" relationship="viewControllers" id="ZWN-8b-oE7"/>
+                        <segue destination="qsD-yt-sV6" kind="relationship" relationship="viewControllers" id="NcA-SE-Xkb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxH-vu-fWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1148" y="-1148"/>
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="Deutsche Logo.png" width="2000" height="386"/>
+        <image name="Warwick logo.jpg" width="1263" height="388"/>
     </resources>
 </document>
