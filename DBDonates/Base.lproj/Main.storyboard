@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-2442" y="-2113"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Item-->
         <scene sceneID="Nu6-Pq-dO0">
             <objects>
                 <viewController id="S2O-b0-v8u" customClass="LoginViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,11 +38,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85785587005979247" green="0.91722074998154279" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Warwick logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-vQ-F7m">
-                                <rect key="frame" x="135" y="449" width="240" height="218"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85969763994216919" green="0.9204288125038147" blue="0.99216741323471069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DBDonates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSX-5k-Wpg">
                                 <rect key="frame" x="29" y="233" width="211" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,10 +47,16 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.33960437928863929" green="0.56315806092462972" blue="0.99216741323471069" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Warwick logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ct9-iU-KSq">
+                                <rect key="frame" x="135" y="449" width="240" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85785587009999997" green="0.91722075000000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6xT-c9-EeZ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="LUo-x6-Lpf"/>
                     <navigationItem key="navigationItem" id="K0J-mW-EDI"/>
                     <connections>
                         <outlet property="loginView" destination="V41-Ks-ZUD" id="xt8-2o-bP1"/>
@@ -98,21 +99,28 @@
             </objects>
             <point key="canvasLocation" x="-121" y="-1797"/>
         </scene>
-        <!--Charity Browser-->
+        <!--CharitiesViewController-->
         <scene sceneID="KxE-GJ-f3E">
             <objects>
-                <viewController id="flH-fB-1Xg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharitiesViewController" title="CharitiesViewController" id="flH-fB-1Xg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OwZ-GQ-nks">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOF-jX-kUu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="CharitiesViewController"/>
                         <viewLayoutGuide key="safeArea" id="e5p-GX-xA7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Charity Browser" id="DSf-bj-zDa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XdZ-R3-FVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="-1120"/>
+            <point key="canvasLocation" x="37.600000000000001" y="-1072.7136431784108"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yfR-dy-2lP">
