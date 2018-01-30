@@ -14,15 +14,15 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
 
+        print("logged in")
         // Recognise click on login with Facebook
         let gestureRecognizer = UITapGestureRecognizer(target: loginButton, action: Selector("handleTap")) // create a gesture recognizer for login button
         loginButton.addGestureRecognizer(gestureRecognizer) // add the recognizer to the button
+        handleLogin(sender: gestureRecognizer)
+        
     }
     
-    func loginButtonDidLogOut(_ loginButton: LoginButton) {
-        <#code#>
-    }
-    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {}
     
     // Login View properties
     @IBOutlet var loginView: UIView!
@@ -35,8 +35,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         
         // If user is already logged in, don't bother going to facebook
         if let accessToken = AccessToken.current {
+            
             // User is logged in, use 'accessToken' here.
+            
         }
+            
         else {
             
             // Facebook login button
@@ -47,7 +50,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     }
     
     // Handle the action when a user  clicks on the login button
-    func handleTap(sender: UITapGestureRecognizer) {
+    func handleLogin(sender: UITapGestureRecognizer) {
         print("going into handletap")
         if sender.state == .ended {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
