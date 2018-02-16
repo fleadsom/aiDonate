@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S2O-b0-v8u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Nd-gv-QSX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Item-->
         <scene sceneID="Nu6-Pq-dO0">
             <objects>
-                <viewController id="S2O-b0-v8u" customClass="LoginViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="S2O-b0-v8u" customClass="LoginViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V41-Ks-ZUD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,13 +48,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEk-jf-RZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1313" y="-1973"/>
+            <point key="canvasLocation" x="-1314.4000000000001" y="-1973.1634182908547"/>
         </scene>
         <!--Donate!-->
         <scene sceneID="yuk-5k-OZG">
             <objects>
                 <viewController id="mLX-Re-LLb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TH7-4i-wRR">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="DonateView" id="TH7-4i-wRR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,7 @@
         <scene sceneID="BQ5-7A-5v5">
             <objects>
                 <viewController id="qsD-yt-sV6" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WGx-8O-4yH">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="FriendsView" id="WGx-8O-4yH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,47 +83,69 @@
             </objects>
             <point key="canvasLocation" x="-121" y="-1797"/>
         </scene>
-        <!--CharitiesViewController-->
-        <scene sceneID="KxE-GJ-f3E">
-            <objects>
-                <viewController storyboardIdentifier="CharitiesViewController" title="CharitiesViewController" id="flH-fB-1Xg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OwZ-GQ-nks">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOF-jX-kUu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <accessibility key="accessibilityConfiguration" identifier="CharitiesViewController"/>
-                        <viewLayoutGuide key="safeArea" id="e5p-GX-xA7"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Charity Browser" id="DSf-bj-zDa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XdZ-R3-FVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="-1072.7136431784108"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yfR-dy-2lP">
             <objects>
-                <tabBarController id="6Nd-gv-QSX" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="tabBarController" storyboardIdentifier="TabBarController" id="6Nd-gv-QSX" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eif-PA-tnD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="flH-fB-1Xg" kind="relationship" relationship="viewControllers" id="oux-yU-lL5"/>
                         <segue destination="mLX-Re-LLb" kind="relationship" relationship="viewControllers" id="ZWN-8b-oE7"/>
                         <segue destination="qsD-yt-sV6" kind="relationship" relationship="viewControllers" id="NcA-SE-Xkb"/>
+                        <segue destination="hcs-LK-f6F" kind="relationship" relationship="viewControllers" id="3QQ-L8-o5h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxH-vu-fWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1148" y="-1148"/>
+        </scene>
+        <!--CharityView-->
+        <scene sceneID="Pcq-bx-mJL">
+            <objects>
+                <tableViewController storyboardIdentifier="CharitiesVC" title="CharityView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hcs-LK-f6F" customClass="CharitiesViewController" customModule="DBDonates" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CharityView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xjt-HB-7dL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharityCell" textLabel="8aC-jb-fGY" detailTextLabel="RhL-BB-dwP" style="IBUITableViewCellStyleSubtitle" id="rGM-r8-JQ3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rGM-r8-JQ3" id="Fkx-ET-n4f">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8aC-jb-fGY">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RhL-BB-dwP">
+                                            <rect key="frame" x="16" y="25.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hcs-LK-f6F" id="rzT-eU-r2I"/>
+                            <outlet property="delegate" destination="hcs-LK-f6F" id="RFc-lx-voG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="vJd-tY-pG9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVS-sM-ZTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="-1125"/>
         </scene>
     </scenes>
     <resources>
