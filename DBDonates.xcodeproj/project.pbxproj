@@ -15,7 +15,10 @@
 		8307087D1F94099500FC44D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8307087B1F94099500FC44D0 /* LaunchScreen.storyboard */; };
 		830708881F94099500FC44D0 /* DBDonatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830708871F94099500FC44D0 /* DBDonatesTests.swift */; };
 		830708931F94099500FC44D0 /* DBDonatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830708921F94099500FC44D0 /* DBDonatesUITests.swift */; };
+		8307399C2039B2B400F694F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307399B2039B2B400F694F8 /* SettingsViewController.swift */; };
 		8332896C202606560048906C /* CharitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332896B202606560048906C /* CharitiesViewController.swift */; };
+		8353E8A6203A39560026606E /* hadoopData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8353E8A5203A39560026606E /* hadoopData.txt */; };
+		8353E8A8203A4A880026606E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E8A7203A4A880026606E /* User.swift */; };
 		837B7F861FBB362100117418 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 837B7F851FBB362100117418 /* Podfile.txt */; };
 		8391A74E1FBB62480095680D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391A74D1FBB62480095680D /* LoginViewController.swift */; };
 		83E731B72012476B0087D76E /* Deutsche Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E731B62012476A0087D76E /* Deutsche Logo.png */; };
@@ -57,7 +60,10 @@
 		8307088E1F94099500FC44D0 /* DBDonatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBDonatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830708921F94099500FC44D0 /* DBDonatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBDonatesUITests.swift; sourceTree = "<group>"; };
 		830708941F94099500FC44D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8307399B2039B2B400F694F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8332896B202606560048906C /* CharitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewController.swift; sourceTree = "<group>"; };
+		8353E8A5203A39560026606E /* hadoopData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hadoopData.txt; sourceTree = "<group>"; };
+		8353E8A7203A4A880026606E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		837B7F851FBB362100117418 /* Podfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
 		8391A74D1FBB62480095680D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		83E731B62012476A0087D76E /* Deutsche Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deutsche Logo.png"; sourceTree = "<group>"; };
@@ -133,7 +139,10 @@
 			children = (
 				8391A74D1FBB62480095680D /* LoginViewController.swift */,
 				8332896B202606560048906C /* CharitiesViewController.swift */,
+				8353E8A7203A4A880026606E /* User.swift */,
 				830708761F94099500FC44D0 /* Main.storyboard */,
+				8307399B2039B2B400F694F8 /* SettingsViewController.swift */,
+				8353E8A5203A39560026606E /* hadoopData.txt */,
 				83BE58251F961D530014F06B /* Supporting */,
 			);
 			path = DBDonates;
@@ -311,6 +320,7 @@
 				837B7F861FBB362100117418 /* Podfile.txt in Resources */,
 				8307087D1F94099500FC44D0 /* LaunchScreen.storyboard in Resources */,
 				8307087A1F94099500FC44D0 /* Assets.xcassets in Resources */,
+				8353E8A6203A39560026606E /* hadoopData.txt in Resources */,
 				830708781F94099500FC44D0 /* Main.storyboard in Resources */,
 				83E731B72012476B0087D76E /* Deutsche Logo.png in Resources */,
 			);
@@ -502,6 +512,8 @@
 				830708711F94099500FC44D0 /* AppDelegate.swift in Sources */,
 				8391A74E1FBB62480095680D /* LoginViewController.swift in Sources */,
 				8332896C202606560048906C /* CharitiesViewController.swift in Sources */,
+				8353E8A8203A4A880026606E /* User.swift in Sources */,
+				8307399C2039B2B400F694F8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +684,7 @@
 				DEVELOPMENT_TEAM = 85XKQDVZRV;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/DBDonates/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Learning.DBDonates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -689,6 +702,7 @@
 				DEVELOPMENT_TEAM = 85XKQDVZRV;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/DBDonates/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Learning.DBDonates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
