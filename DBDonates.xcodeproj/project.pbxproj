@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		239EADA3919F9863A396AD57 /* Pods_DBDonatesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38163EABA3BD3B414B8D3DD /* Pods_DBDonatesUITests.framework */; };
-		4C3D291F1A59549891E21EF4 /* Pods_DBDonates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0476E1B0874BD20D2CCD5C /* Pods_DBDonates.framework */; };
+		3A3544960A431D3FE084CE02 /* Pods_DBDonates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0476E1B0874BD20D2CCD5C /* Pods_DBDonates.framework */; };
 		830708711F94099500FC44D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830708701F94099500FC44D0 /* AppDelegate.swift */; };
 		830708781F94099500FC44D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830708761F94099500FC44D0 /* Main.storyboard */; };
 		8307087A1F94099500FC44D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830708791F94099500FC44D0 /* Assets.xcassets */; };
@@ -16,11 +16,22 @@
 		830708881F94099500FC44D0 /* DBDonatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830708871F94099500FC44D0 /* DBDonatesTests.swift */; };
 		830708931F94099500FC44D0 /* DBDonatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830708921F94099500FC44D0 /* DBDonatesUITests.swift */; };
 		8307399C2039B2B400F694F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307399B2039B2B400F694F8 /* SettingsViewController.swift */; };
-		8332896C202606560048906C /* CharitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332896B202606560048906C /* CharitiesViewController.swift */; };
-		8353E8A6203A39560026606E /* hadoopData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8353E8A5203A39560026606E /* hadoopData.txt */; };
+		831CA352204A11F900890DFA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CA351204A11F900890DFA /* Users.swift */; };
+		831CA354204AF82D00890DFA /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CA353204AF82D00890DFA /* FriendsTableViewCell.swift */; };
+		8332896C202606560048906C /* CharitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332896B202606560048906C /* CharitiesTableViewController.swift */; };
+		834DE047204C6AD900A0A440 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DE046204C6AD900A0A440 /* DonateViewController.swift */; };
+		834DE049204C9A1C00A0A440 /* Deutsche background flags.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 834DE048204C9A1B00A0A440 /* Deutsche background flags.jpg */; };
+		834DE04B204CA05600A0A440 /* logo-transparent-white-warwick.png in Resources */ = {isa = PBXBuildFile; fileRef = 834DE04A204CA05600A0A440 /* logo-transparent-white-warwick.png */; };
+		834DE04D204CA74E00A0A440 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 834DE04C204CA74D00A0A440 /* Background.png */; };
 		8353E8A8203A4A880026606E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E8A7203A4A880026606E /* User.swift */; };
+		83610C782046EDAD00C3B303 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83610C772046EDAD00C3B303 /* CharityTableViewCell.swift */; };
 		837B7F861FBB362100117418 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 837B7F851FBB362100117418 /* Podfile.txt */; };
+		837EBC8E2045B9B00022B11B /* classified_charities.txt in Resources */ = {isa = PBXBuildFile; fileRef = 837EBC772045B9B00022B11B /* classified_charities.txt */; };
+		837EBC972045B9B00022B11B /* local_charities.txt in Resources */ = {isa = PBXBuildFile; fileRef = 837EBC852045B9B00022B11B /* local_charities.txt */; };
 		8391A74E1FBB62480095680D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391A74D1FBB62480095680D /* LoginViewController.swift */; };
+		839EC0EF2047439000615341 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EC0EE2047439000615341 /* FriendsTableViewController.swift */; };
+		83B4A69C204DCE8B00B0CA5F /* AreaGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B4A69B204DCE8B00B0CA5F /* AreaGroup.swift */; };
+		83BB2D0C2048ABD000E2E8B8 /* transactions.csv in Resources */ = {isa = PBXBuildFile; fileRef = 83BB2D0B2048ABD000E2E8B8 /* transactions.csv */; };
 		83E731B72012476B0087D76E /* Deutsche Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E731B62012476A0087D76E /* Deutsche Logo.png */; };
 		CC43FBF9DA766AB1225745C3 /* Pods_DBDonatesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11697B108C0AC8F128B7F53D /* Pods_DBDonatesTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +50,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8307086C1F94099500FC44D0;
 			remoteInfo = DBDonates;
+		};
+		831C9D6821FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		831C9D6A21FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		831C9D6C21FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		831C9D6E21FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		831C9D7021FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		831C9D7221FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		831C9D7421FDFFAB003A7944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,11 +121,24 @@
 		830708921F94099500FC44D0 /* DBDonatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBDonatesUITests.swift; sourceTree = "<group>"; };
 		830708941F94099500FC44D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8307399B2039B2B400F694F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		8332896B202606560048906C /* CharitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewController.swift; sourceTree = "<group>"; };
-		8353E8A5203A39560026606E /* hadoopData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hadoopData.txt; sourceTree = "<group>"; };
+		831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../../../SQLite/SQLite.xcodeproj; sourceTree = "<group>"; };
+		831C9D8E21FE0000003A7944 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831CA351204A11F900890DFA /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		831CA353204AF82D00890DFA /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		8332896B202606560048906C /* CharitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesTableViewController.swift; sourceTree = "<group>"; };
+		834DE046204C6AD900A0A440 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		834DE048204C9A1B00A0A440 /* Deutsche background flags.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Deutsche background flags.jpg"; sourceTree = "<group>"; };
+		834DE04A204CA05600A0A440 /* logo-transparent-white-warwick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-transparent-white-warwick.png"; sourceTree = "<group>"; };
+		834DE04C204CA74D00A0A440 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		8353E8A7203A4A880026606E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83610C772046EDAD00C3B303 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		837B7F851FBB362100117418 /* Podfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
+		837EBC772045B9B00022B11B /* classified_charities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = classified_charities.txt; path = DBDonates/Supporting/classified_charities.txt; sourceTree = SOURCE_ROOT; };
+		837EBC852045B9B00022B11B /* local_charities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local_charities.txt; sourceTree = "<group>"; };
 		8391A74D1FBB62480095680D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		839EC0EE2047439000615341 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		83B4A69B204DCE8B00B0CA5F /* AreaGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGroup.swift; sourceTree = "<group>"; };
+		83BB2D0B2048ABD000E2E8B8 /* transactions.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = transactions.csv; sourceTree = "<group>"; };
 		83E731B62012476A0087D76E /* Deutsche Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deutsche Logo.png"; sourceTree = "<group>"; };
 		83E731BA201255050087D76E /* Warwick logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Warwick logo.jpg"; path = "/Users/fleadsom/Documents/cs310/DBDonates/DBDonates/Supporting/Images/Warwick logo.jpg"; sourceTree = "<absolute>"; };
 		A74F6CD76455D13CB702DC5C /* Pods-DBDonates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDonates.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBDonates/Pods-DBDonates.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3D291F1A59549891E21EF4 /* Pods_DBDonates.framework in Frameworks */,
+				3A3544960A431D3FE084CE02 /* Pods_DBDonates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +178,7 @@
 		4782CC67DB04DACFABF8AB45 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				831C9D8E21FE0000003A7944 /* SQLite.framework */,
 				0F0476E1B0874BD20D2CCD5C /* Pods_DBDonates.framework */,
 				11697B108C0AC8F128B7F53D /* Pods_DBDonatesTests.framework */,
 				F38163EABA3BD3B414B8D3DD /* Pods_DBDonatesUITests.framework */,
@@ -137,12 +211,13 @@
 		8307086F1F94099500FC44D0 /* DBDonates */ = {
 			isa = PBXGroup;
 			children = (
+				834427CE204C6A2200C5A243 /* Donate */,
+				834427CD204C6A1C00C5A243 /* Friends */,
+				834427CC204C6A1000C5A243 /* Recommend */,
 				8391A74D1FBB62480095680D /* LoginViewController.swift */,
-				8332896B202606560048906C /* CharitiesViewController.swift */,
 				8353E8A7203A4A880026606E /* User.swift */,
 				830708761F94099500FC44D0 /* Main.storyboard */,
 				8307399B2039B2B400F694F8 /* SettingsViewController.swift */,
-				8353E8A5203A39560026606E /* hadoopData.txt */,
 				83BE58251F961D530014F06B /* Supporting */,
 			);
 			path = DBDonates;
@@ -166,9 +241,55 @@
 			path = DBDonatesUITests;
 			sourceTree = "<group>";
 		};
+		831C9D5F21FDFFAB003A7944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831C9D6921FDFFAB003A7944 /* SQLite.framework */,
+				831C9D6B21FDFFAB003A7944 /* SQLiteTests iOS.xctest */,
+				831C9D6D21FDFFAB003A7944 /* SQLite.framework */,
+				831C9D6F21FDFFAB003A7944 /* SQLiteTests Mac.xctest */,
+				831C9D7121FDFFAB003A7944 /* SQLite.framework */,
+				831C9D7321FDFFAB003A7944 /* SQLiteTests tvOS.xctest */,
+				831C9D7521FDFFAB003A7944 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834427CC204C6A1000C5A243 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */,
+				8332896B202606560048906C /* CharitiesTableViewController.swift */,
+				83610C772046EDAD00C3B303 /* CharityTableViewCell.swift */,
+				83B4A69B204DCE8B00B0CA5F /* AreaGroup.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		834427CD204C6A1C00C5A243 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				831CA351204A11F900890DFA /* Users.swift */,
+				831CA353204AF82D00890DFA /* FriendsTableViewCell.swift */,
+				839EC0EE2047439000615341 /* FriendsTableViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		834427CE204C6A2200C5A243 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				834DE046204C6AD900A0A440 /* DonateViewController.swift */,
+				83BB2D0B2048ABD000E2E8B8 /* transactions.csv */,
+			);
+			path = Donate;
+			sourceTree = "<group>";
+		};
 		83BE58251F961D530014F06B /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				837EBC852045B9B00022B11B /* local_charities.txt */,
+				837EBC772045B9B00022B11B /* classified_charities.txt */,
 				83E731BB2012551E0087D76E /* Images */,
 				830708701F94099500FC44D0 /* AppDelegate.swift */,
 				830708791F94099500FC44D0 /* Assets.xcassets */,
@@ -182,6 +303,9 @@
 		83E731BB2012551E0087D76E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				834DE04C204CA74D00A0A440 /* Background.png */,
+				834DE04A204CA05600A0A440 /* logo-transparent-white-warwick.png */,
+				834DE048204C9A1B00A0A440 /* Deutsche background flags.jpg */,
 				83E731B62012476A0087D76E /* Deutsche Logo.png */,
 				83E731BA201255050087D76E /* Warwick logo.jpg */,
 			);
@@ -213,7 +337,6 @@
 				8307086A1F94099500FC44D0 /* Frameworks */,
 				8307086B1F94099500FC44D0 /* Resources */,
 				9C32C90F5C36E8FDD3222A31 /* [CP] Embed Pods Frameworks */,
-				2C07BE5DF6449AF91D78EC8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +355,6 @@
 				8307087F1F94099500FC44D0 /* Sources */,
 				830708801F94099500FC44D0 /* Frameworks */,
 				830708811F94099500FC44D0 /* Resources */,
-				F69E930EF01AB2F2B7F7B095 /* [CP] Embed Pods Frameworks */,
-				65FFF8646E9E00FA2FB50464 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,8 +374,6 @@
 				8307088A1F94099500FC44D0 /* Sources */,
 				8307088B1F94099500FC44D0 /* Frameworks */,
 				8307088C1F94099500FC44D0 /* Resources */,
-				662726DE50478E84AA34194B /* [CP] Embed Pods Frameworks */,
-				7E3542C0DA166DC641230A55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +422,12 @@
 			mainGroup = 830708641F94099500FC44D0;
 			productRefGroup = 8307086E1F94099500FC44D0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 831C9D5F21FDFFAB003A7944 /* Products */;
+					ProjectRef = 831C9D5E21FDFFAB003A7944 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8307086C1F94099500FC44D0 /* DBDonates */,
@@ -312,17 +437,74 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		831C9D6921FDFFAB003A7944 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 831C9D6821FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D6B21FDFFAB003A7944 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 831C9D6A21FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D6D21FDFFAB003A7944 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 831C9D6C21FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D6F21FDFFAB003A7944 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 831C9D6E21FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D7121FDFFAB003A7944 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 831C9D7021FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D7321FDFFAB003A7944 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 831C9D7221FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		831C9D7521FDFFAB003A7944 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 831C9D7421FDFFAB003A7944 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8307086B1F94099500FC44D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837EBC972045B9B00022B11B /* local_charities.txt in Resources */,
+				834DE04D204CA74E00A0A440 /* Background.png in Resources */,
 				837B7F861FBB362100117418 /* Podfile.txt in Resources */,
+				834DE04B204CA05600A0A440 /* logo-transparent-white-warwick.png in Resources */,
 				8307087D1F94099500FC44D0 /* LaunchScreen.storyboard in Resources */,
+				83BB2D0C2048ABD000E2E8B8 /* transactions.csv in Resources */,
 				8307087A1F94099500FC44D0 /* Assets.xcassets in Resources */,
-				8353E8A6203A39560026606E /* hadoopData.txt in Resources */,
+				837EBC8E2045B9B00022B11B /* classified_charities.txt in Resources */,
 				830708781F94099500FC44D0 /* Main.storyboard in Resources */,
 				83E731B72012476B0087D76E /* Deutsche Logo.png in Resources */,
+				834DE049204C9A1C00A0A440 /* Deutsche background flags.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,21 +543,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2C07BE5DF6449AF91D78EC8C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDonates/Pods-DBDonates-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4DD2A18190B8ABAA1A97BAE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,51 +561,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65FFF8646E9E00FA2FB50464 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDonatesTests/Pods-DBDonatesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		662726DE50478E84AA34194B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDonatesUITests/Pods-DBDonatesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E3542C0DA166DC641230A55 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDonatesUITests/Pods-DBDonatesUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9C32C90F5C36E8FDD3222A31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +575,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -463,6 +586,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -487,21 +611,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F69E930EF01AB2F2B7F7B095 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDonatesTests/Pods-DBDonatesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -510,9 +619,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				830708711F94099500FC44D0 /* AppDelegate.swift in Sources */,
+				83B4A69C204DCE8B00B0CA5F /* AreaGroup.swift in Sources */,
+				831CA352204A11F900890DFA /* Users.swift in Sources */,
 				8391A74E1FBB62480095680D /* LoginViewController.swift in Sources */,
-				8332896C202606560048906C /* CharitiesViewController.swift in Sources */,
+				831CA354204AF82D00890DFA /* FriendsTableViewCell.swift in Sources */,
+				83610C782046EDAD00C3B303 /* CharityTableViewCell.swift in Sources */,
+				8332896C202606560048906C /* CharitiesTableViewController.swift in Sources */,
 				8353E8A8203A4A880026606E /* User.swift in Sources */,
+				839EC0EF2047439000615341 /* FriendsTableViewController.swift in Sources */,
+				834DE047204C6AD900A0A440 /* DonateViewController.swift in Sources */,
 				8307399C2039B2B400F694F8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,7 +799,7 @@
 				DEVELOPMENT_TEAM = 85XKQDVZRV;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/DBDonates/Supporting/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Learning.DBDonates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,7 +817,7 @@
 				DEVELOPMENT_TEAM = 85XKQDVZRV;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/DBDonates/Supporting/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Learning.DBDonates;
 				PRODUCT_NAME = "$(TARGET_NAME)";

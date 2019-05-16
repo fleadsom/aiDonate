@@ -9,6 +9,7 @@
 import UIKit
 import FacebookLogin
 import FacebookCore
+import FacebookShare
 
 class LoginViewController: UIViewController, LoginButtonDelegate {
     
@@ -19,7 +20,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
 
         print("Facebook Login Successful")
         
-        // redirect to main page
+        // redirect to main page on login
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController")
         self.present(vc, animated: true, completion: nil)
@@ -46,7 +47,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
         else {
             
             // Facebook login button
-            let loginButton = LoginButton(readPermissions: [ .publicProfile, .userLikes, .userHometown ])
+            let loginButton = LoginButton(readPermissions: [ .publicProfile, .userLikes, .userHometown, .userFriends ])
             loginButton.delegate = self
             loginButton.center = view.center
             view.addSubview(loginButton)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A175AF196032C3B3C2307F2122BE1D89'
-               BlueprintName = 'Pods-DBDonates'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-DBDonates.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DEB81197EFA386AC5BF25A9649DCB0A8"
+               BlueprintName = "Pods-DBDonates"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "Pods-DBDonates.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

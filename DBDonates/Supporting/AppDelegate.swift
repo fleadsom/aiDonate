@@ -20,13 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    // method called when app finishes launch
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // send user to login screen before tabbar
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         self.window?.rootViewController = loginVC
-        // Override point for customization after application launch.
+        
         return true
     }
 

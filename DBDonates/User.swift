@@ -17,9 +17,17 @@ class User {
     }
     
     var userId: Int!
+    var username: String?
+    var profile_picture_url: String?
     var hometown: String?
     
     func setHometown(h: Dictionary<String, Any>) {
         self.hometown = h["name"] as? String
+    }
+    func setUsername(u: String) {
+        self.username = u
+    }
+    func setPPURL(url: String) {
+        self.profile_picture_url = url
     }
 }

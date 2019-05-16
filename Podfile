@@ -7,6 +7,7 @@ target 'DBDonates' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'SQLite.swift', '~> 0.11.5'
 
   # Pods for DBDonates
 

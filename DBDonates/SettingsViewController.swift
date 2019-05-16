@@ -8,18 +8,28 @@
 
 import UIKit
 import FacebookLogin
+import FacebookCore
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, LoginButtonDelegate {
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {}
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
 
+        // send user back to login screen
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Facebook login button
-        let loginButton = LoginButton(readPermissions: [ .publicProfile, .userLikes, .userHometown ])
-        loginButton.center = view.center
-        view.addSubview(loginButton)
-        
-        // Do any additional setup after loading the view.
+        // Facebook login button (will display as logout button when user is logged in)
+        let loginButton = LoginButton(readPermissions: [ .publicProfile, .userLikes, .userHometown ]) // set logout button
+        loginButton.center = view.center // center logout button
+        loginButton.delegate = self // assign delegate to self (from loginviewcontroller)
+        view.addSubview(loginButton) // display button
     }
 
     override func didReceiveMemoryWarning() {
