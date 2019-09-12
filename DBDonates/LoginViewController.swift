@@ -20,6 +20,8 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
 
         print("Facebook Login Successful")
         
+        if (result)
+        
         // redirect to main page on login
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController")

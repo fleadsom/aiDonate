@@ -18,6 +18,7 @@
 		8307399C2039B2B400F694F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307399B2039B2B400F694F8 /* SettingsViewController.swift */; };
 		831CA352204A11F900890DFA /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CA351204A11F900890DFA /* Users.swift */; };
 		831CA354204AF82D00890DFA /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CA353204AF82D00890DFA /* FriendsTableViewCell.swift */; };
+		832715DA22B02CE800FEE283 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832715D922B02CE800FEE283 /* Database.swift */; };
 		8332896C202606560048906C /* CharitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332896B202606560048906C /* CharitiesTableViewController.swift */; };
 		834DE047204C6AD900A0A440 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DE046204C6AD900A0A440 /* DonateViewController.swift */; };
 		834DE049204C9A1C00A0A440 /* Deutsche background flags.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 834DE048204C9A1B00A0A440 /* Deutsche background flags.jpg */; };
@@ -125,6 +126,7 @@
 		831C9D8E21FE0000003A7944 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		831CA351204A11F900890DFA /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		831CA353204AF82D00890DFA /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		832715D922B02CE800FEE283 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		8332896B202606560048906C /* CharitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesTableViewController.swift; sourceTree = "<group>"; };
 		834DE046204C6AD900A0A440 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		834DE048204C9A1B00A0A440 /* Deutsche background flags.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Deutsche background flags.jpg"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				830708761F94099500FC44D0 /* Main.storyboard */,
 				8307399B2039B2B400F694F8 /* SettingsViewController.swift */,
 				83BE58251F961D530014F06B /* Supporting */,
+				832715D922B02CE800FEE283 /* Database.swift */,
 			);
 			path = DBDonates;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				8391A74E1FBB62480095680D /* LoginViewController.swift in Sources */,
 				831CA354204AF82D00890DFA /* FriendsTableViewCell.swift in Sources */,
 				83610C782046EDAD00C3B303 /* CharityTableViewCell.swift in Sources */,
+				832715DA22B02CE800FEE283 /* Database.swift in Sources */,
 				8332896C202606560048906C /* CharitiesTableViewController.swift in Sources */,
 				8353E8A8203A4A880026606E /* User.swift in Sources */,
 				839EC0EF2047439000615341 /* FriendsTableViewController.swift in Sources */,

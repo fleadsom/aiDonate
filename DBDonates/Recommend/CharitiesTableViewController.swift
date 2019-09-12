@@ -26,16 +26,11 @@ class CharitiesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // read in hadoop file
-        displayCharities()
+        readLocalCharities()
         
         // set user hometown
-        getUserData()
+        self.hometown = getUserData(requested: "hometown")
         
-    }
-    
-    // displays all seperate charity recommendation rules
-    func displayCharities() {
-        readLocalCharities()
     }
     
     func readLocalCharities() {
@@ -110,16 +105,18 @@ class CharitiesTableViewController: UITableViewController {
     }
     
     // Get user data and output it to a file
-    func getUserData() {
+    func getUserData(requested data:String) -> String {
+        
+        var returnable = ""
+        
         struct MyProfileRequest: GraphRequestProtocol {
             struct Response: GraphResponseProtocol {
                 
                 var name: String?
                 var id: String?
-                var likes: Dictionary<String, Any>?
                 var hometown: Dictionary<String, Any>?
                 var profilePictureUrl: String?
-                var friends: String?
+                var friends: NSArray?
                 
                 init(rawResponse: Any?) {
                     // Decode JSON from rawResponse into other properties here.
@@ -135,12 +132,10 @@ class CharitiesTableViewController: UITableViewController {
                         self.id = id
                     }
                     
-                    if let likes = response["likes"] as? Dictionary<String, Any> {
-                        self.likes = likes
-                    }
-                    
-                    if let friends = response["friends"] as? String {
-                        self.friends = friends
+                    if let friends = response["friends"]! as? Dictionary<String, Any> {
+                        if let data = friends["data"]! as? NSArray {
+                            self.friends = data
+                        }
                     }
                     
                     if let hometown = response["hometown"] as? Dictionary<String, Any> {
@@ -158,7 +153,7 @@ class CharitiesTableViewController: UITableViewController {
                 }
             }
             var graphPath = "/me"
-            var parameters: [String : Any]? = ["fields": "id, name, picture.type(large), hometown, likes"]
+            var parameters: [String : Any ]? = ["fields": "id, name, picture.type(large), hometown, friends"]
             var accessToken = AccessToken.current
             var httpMethod: GraphRequestHTTPMethod = .GET
             var apiVersion: GraphAPIVersion = .defaultVersion
@@ -171,16 +166,18 @@ class CharitiesTableViewController: UITableViewController {
                 
                 print("Custom Graph Request Succeeded: \(response)")
                 
-                print("user hometown: \(response.hometown!["name"])")
-                
-                // return hometown
-                self.hometown = String(describing: response.hometown!["name"])
+                switch data {
+                case "hometown":
+                    returnable = String(describing: response.hometown!["name"])
+                default: print("no valid data requested")
+                }
                 
             case .failed(let error):
                 print("Custom Graph Request Failed: \(error)")
             }
         }
         connection.start()
+        return returnable
     }
     
     
